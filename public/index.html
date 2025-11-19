@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Avatar Studio - Create Realistic AI Videos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                    <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" style="stop-color:#8B5CF6"/>
+                            <stop offset="100%" style="stop-color:#EC4899"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>AI Avatar Studio</span>
+            </div>
+            <div class="nav-links">
+                <a href="#create">Create</a>
+                <a href="#avatars">My Avatars</a>
+                <a href="#voices">Voices</a>
+                <a href="#docs" target="_blank">API Docs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Create Realistic AI Avatar Videos in Minutes</h1>
+            <p class="hero-subtitle">Transform text into professional videos with AI-powered avatars and voice synthesis</p>
+            <a href="#create" class="cta-button">Start Creating Free</a>
+        </div>
+        <div class="hero-video">
+            <div class="video-placeholder">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <circle cx="40" cy="40" r="40" fill="url(#heroGradient)" opacity="0.2"/>
+                    <path d="M30 25L55 40L30 55V25Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="heroGradient" x1="0" y1="0" x2="80" y2="80">
+                            <stop offset="0%" style="stop-color:#8B5CF6"/>
+                            <stop offset="100%" style="stop-color:#EC4899"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Section -->
+    <section id="create" class="create-section">
+        <div class="container">
+            <h2 class="section-title">Generate Your AI Video</h2>
+
+            <div class="creation-studio">
+                <!-- Avatar Selection -->
+                <div class="studio-panel">
+                    <h3>1. Select Avatar</h3>
+                    <div class="avatar-grid">
+                        <div class="avatar-card active" data-avatar="default">
+                            <div class="avatar-preview">👤</div>
+                            <span>Professional</span>
+                        </div>
+                        <div class="avatar-card" data-avatar="casual">
+                            <div class="avatar-preview">👨‍💼</div>
+                            <span>Casual</span>
+                        </div>
+                        <div class="avatar-card" data-avatar="friendly">
+                            <div class="avatar-preview">👩</div>
+                            <span>Friendly</span>
+                        </div>
+                        <div class="avatar-card upload-avatar">
+                            <div class="avatar-preview">➕</div>
+                            <span>Upload</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voice Selection -->
+                <div class="studio-panel">
+                    <h3>2. Choose Voice</h3>
+                    <div class="voice-selector">
+                        <select id="voiceSelect" class="voice-dropdown">
+                            <option value="rachel">Rachel - Professional Female</option>
+                            <option value="adam">Adam - Professional Male</option>
+                            <option value="domi">Domi - Energetic Female</option>
+                            <option value="josh">Josh - Warm Male</option>
+                            <option value="custom">Custom Voice (Clone)</option>
+                        </select>
+                        <button class="preview-voice-btn">▶ Preview</button>
+                    </div>
+                </div>
+
+                <!-- Script Input -->
+                <div class="studio-panel">
+                    <h3>3. Enter Your Script</h3>
+                    <textarea
+                        id="scriptInput"
+                        class="script-textarea"
+                        placeholder="Enter your script here... (e.g., 'Welcome to our product demo. Today I'll show you how our AI-powered platform can transform your business...')&#10;&#10;💡 Tips:&#10;- Keep sentences natural and conversational&#10;- Add pauses with commas and periods&#10;- Aim for 150-300 words for best results"
+                        rows="8"
+                    ></textarea>
+                    <div class="script-stats">
+                        <span id="wordCount">0 words</span>
+                        <span id="estimatedDuration">~0 seconds</span>
+                    </div>
+                </div>
+
+                <!-- Advanced Options -->
+                <div class="studio-panel collapsible">
+                    <h3 class="collapsible-header">
+                        <span>Advanced Options</span>
+                        <span class="collapse-icon">▼</span>
+                    </h3>
+                    <div class="collapsible-content">
+                        <div class="option-row">
+                            <label>Video Quality</label>
+                            <select id="qualitySelect">
+                                <option value="720p">720p (Fast)</option>
+                                <option value="1080p" selected>1080p (Recommended)</option>
+                                <option value="4k">4K (Slow)</option>
+                            </select>
+                        </div>
+                        <div class="option-row">
+                            <label>Background</label>
+                            <select id="backgroundSelect">
+                                <option value="default">Default</option>
+                                <option value="office">Professional Office</option>
+                                <option value="studio">Studio</option>
+                                <option value="custom">Custom Upload</option>
+                            </select>
+                        </div>
+                        <div class="option-row">
+                            <label>Speaking Speed</label>
+                            <input type="range" id="speedSlider" min="0.5" max="2" step="0.1" value="1">
+                            <span id="speedValue">1.0x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generate Button -->
+                <button id="generateBtn" class="generate-btn">
+                    <span class="btn-text">Generate Video</span>
+                    <span class="btn-icon">🎬</span>
+                </button>
+
+                <!-- Progress Section -->
+                <div id="progressSection" class="progress-section hidden">
+                    <div class="progress-header">
+                        <h3>Generating Your Video...</h3>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step" data-step="1">
+                            <div class="step-icon">🎤</div>
+                            <span>Synthesizing Voice</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-icon">👄</div>
+                            <span>Syncing Lips</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-icon">🎥</div>
+                            <span>Rendering Video</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <div class="step-icon">✨</div>
+                            <span>Finalizing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Section -->
+                <div id="resultSection" class="result-section hidden">
+                    <h3>Your Video is Ready! 🎉</h3>
+                    <div class="video-preview">
+                        <video id="resultVideo" controls></video>
+                    </div>
+                    <div class="result-actions">
+                        <button class="download-btn">Download MP4</button>
+                        <button class="share-btn">Share Link</button>
+                        <button class="new-video-btn">Create Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Realistic Avatars</h3>
+                    <p>Create custom avatars with advanced facial animation and lip-sync technology</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Natural Voice Synthesis</h3>
+                    <p>ElevenLabs-powered voices with emotion and natural speech patterns</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Generation</h3>
+                    <p>GPU-accelerated processing for quick video generation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Custom Backgrounds</h3>
+                    <p>Professional backgrounds or upload your own</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Batch Processing</h3>
+                    <p>Generate multiple videos simultaneously</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>API Access</h3>
+                    <p>Integrate with your applications via REST API</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Videos Generated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Avatar Options</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Voice Models</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Avatar Studio</h4>
+                    <p>Create professional AI avatar videos with ease</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#docs">API Documentation</a>
+                    <a href="#examples">Examples</a>
+                    <a href="#tutorials">Tutorials</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#help">Help Center</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#status">System Status</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Avatar Studio. Powered by Wav2Lip & ElevenLabs.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
