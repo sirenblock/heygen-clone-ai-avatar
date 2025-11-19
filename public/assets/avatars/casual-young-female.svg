@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg4)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#f0c6a0"/>
+  <!-- Hair (long with highlights) -->
+  <path d="M 68 58 Q 68 38 100 35 Q 132 38 132 58 L 135 90 Q 133 100 128 105 L 125 95 L 122 105 L 118 95 L 115 105 L 110 95 L 105 105 L 100 95 L 95 105 L 90 95 L 85 105 L 82 95 L 78 105 L 75 95 L 72 105 Q 67 100 65 90 Z" fill="#8b5a3c"/>
+  <!-- Hair highlights -->
+  <path d="M 85 45 Q 90 40 95 45" stroke="#b8936f" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 105 45 Q 110 40 115 45" stroke="#b8936f" stroke-width="2" fill="none" opacity="0.7"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="75" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="75" r="3" fill="#1a1a1a"/>
+  <!-- Lips -->
+  <ellipse cx="100" cy="88" rx="5" ry="2.5" fill="#ec4899"/>
+  <!-- Casual top -->
+  <rect x="60" y="110" width="80" height="90" fill="#fbbf24" rx="5"/>
+  <!-- Straps -->
+  <rect x="75" y="110" width="8" height="30" fill="#f59e0b"/>
+  <rect x="117" y="110" width="8" height="30" fill="#f59e0b"/>
+</svg>

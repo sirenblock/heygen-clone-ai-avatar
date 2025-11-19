@@ -1,0 +1,105 @@
+{
+  "scripts": [
+    {
+      "id": "product-demo",
+      "title": "Product Demo",
+      "category": "Business",
+      "avatar": "default",
+      "voice": "rachel",
+      "script": "Welcome to our revolutionary product demonstration! Today, I'm excited to show you how our innovative solution can transform your workflow and boost productivity by up to 300%. Our platform combines cutting-edge AI technology with intuitive design to deliver results that exceed expectations. Let's dive in and explore the key features that make us the industry leader.",
+      "tags": ["business", "product", "demo"]
+    },
+    {
+      "id": "training-video",
+      "title": "Training Video",
+      "category": "Education",
+      "avatar": "casual",
+      "voice": "josh",
+      "script": "Hello team! Welcome to your onboarding training session. In this video, we'll cover the essential skills and knowledge you need to succeed in your new role. We'll walk through our company policies, introduce you to key team members, and provide hands-on examples of common tasks. By the end of this training, you'll feel confident and ready to contribute to our mission. Let's get started!",
+      "tags": ["training", "education", "onboarding"]
+    },
+    {
+      "id": "social-media",
+      "title": "Social Media Post",
+      "category": "Marketing",
+      "avatar": "friendly",
+      "voice": "domi",
+      "script": "Hey everyone! Have you heard the exciting news? We just launched our brand new feature and it's absolutely game-changing! This is exactly what you've been asking for, and we can't wait for you to try it. Drop a comment below if you're as excited as we are! Don't forget to share this with someone who needs to see it. Let's make this go viral!",
+      "tags": ["social", "marketing", "announcement"]
+    },
+    {
+      "id": "company-announcement",
+      "title": "Company Announcement",
+      "category": "Corporate",
+      "avatar": "default",
+      "voice": "adam",
+      "script": "Good morning everyone. I'm pleased to share some important company updates with you today. This quarter has been exceptional, with record-breaking growth across all departments. Thanks to your hard work and dedication, we've achieved milestones that position us perfectly for future success. I want to personally thank each team member for their contribution. Together, we're building something truly special.",
+      "tags": ["corporate", "announcement", "internal"]
+    },
+    {
+      "id": "educational-content",
+      "title": "Educational Content",
+      "category": "Education",
+      "avatar": "casual",
+      "voice": "rachel",
+      "script": "Today's lesson focuses on understanding the fundamentals of artificial intelligence and machine learning. These technologies are reshaping our world in remarkable ways. We'll explore how neural networks process information, learn from data, and make predictions. You'll discover the practical applications that are already impacting industries from healthcare to transportation. Get ready to unlock the mysteries of AI!",
+      "tags": ["education", "tutorial", "learning"]
+    },
+    {
+      "id": "sales-pitch",
+      "title": "Sales Pitch",
+      "category": "Sales",
+      "avatar": "default",
+      "voice": "adam",
+      "script": "Imagine cutting your operational costs by 40% while simultaneously increasing efficiency. Sounds too good to be true? That's exactly what our clients are experiencing. Our solution has helped over 500 companies transform their business model and achieve unprecedented growth. The best part? Implementation takes just 48 hours. Schedule a demo today and see why industry leaders choose us as their trusted partner.",
+      "tags": ["sales", "pitch", "business"]
+    },
+    {
+      "id": "customer-testimonial",
+      "title": "Customer Testimonial",
+      "category": "Marketing",
+      "avatar": "friendly",
+      "voice": "domi",
+      "script": "I have to share my amazing experience with this product! Before discovering this solution, I was struggling with inefficiency and wasted time. Within just two weeks of implementation, everything changed. My team's productivity doubled, our customer satisfaction scores skyrocketed, and we finally achieved the results we'd been chasing. This isn't just a product – it's a complete game-changer. I highly recommend it to anyone serious about success.",
+      "tags": ["testimonial", "review", "customer"]
+    },
+    {
+      "id": "event-invitation",
+      "title": "Event Invitation",
+      "category": "Marketing",
+      "avatar": "friendly",
+      "voice": "rachel",
+      "script": "You're invited to the most anticipated event of the year! Join us on March 15th for an unforgettable experience featuring industry experts, innovative workshops, and exclusive networking opportunities. This is your chance to connect with thought leaders, discover cutting-edge trends, and gain insights that will propel your career forward. Spaces are limited, so register today to secure your spot. We can't wait to see you there!",
+      "tags": ["event", "invitation", "networking"]
+    },
+    {
+      "id": "explainer-video",
+      "title": "Explainer Video",
+      "category": "Education",
+      "avatar": "casual",
+      "voice": "josh",
+      "script": "Have you ever wondered how blockchain technology actually works? Let me break it down in simple terms. Think of blockchain as a digital ledger that's shared across thousands of computers. Every transaction is recorded in a 'block', and these blocks are chained together chronologically. What makes it special is that once information is recorded, it cannot be altered without everyone knowing. This creates transparency, security, and trust without needing a central authority.",
+      "tags": ["explainer", "education", "technology"]
+    },
+    {
+      "id": "motivational-speech",
+      "title": "Motivational Speech",
+      "category": "Inspiration",
+      "avatar": "default",
+      "voice": "adam",
+      "script": "Success isn't about being the smartest person in the room – it's about persistence, dedication, and the courage to keep moving forward when others quit. Every expert was once a beginner. Every master was once a student. Your journey starts with a single step, and every step forward is a victory. Don't let fear of failure hold you back. Embrace challenges as opportunities to grow. Believe in yourself, stay focused on your goals, and remember: you are capable of achieving extraordinary things.",
+      "tags": ["motivation", "inspiration", "personal-development"]
+    }
+  ],
+  "categories": ["Business", "Education", "Marketing", "Corporate", "Sales", "Inspiration"],
+  "demo": {
+    "id": "demo-default",
+    "title": "Demo Video",
+    "avatar": "default",
+    "voice": "rachel",
+    "quality": "1080p",
+    "background": "office",
+    "speed": "1.0",
+    "script": "Welcome to AI Avatar Studio! This is a demo video showing you how easy it is to create professional AI-powered videos. Simply select your avatar, choose a voice, enter your script, and click generate. In just minutes, you'll have a polished video ready to share. Try it yourself and experience the power of AI video creation!"
+  }
+}

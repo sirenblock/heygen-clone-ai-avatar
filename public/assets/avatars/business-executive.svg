@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#18181b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3f3f46;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg5)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#d4a574"/>
+  <!-- Hair (executive style with grey) -->
+  <path d="M 68 62 Q 68 42 100 40 Q 132 42 132 62 L 132 75 Q 130 60 120 58 L 115 65 L 110 60 L 105 65 L 100 60 L 95 65 L 90 60 L 85 65 L 80 58 Q 70 60 68 75 Z" fill="#52525b"/>
+  <!-- Beard/mustache -->
+  <ellipse cx="100" cy="95" rx="15" ry="8" fill="#52525b" opacity="0.3"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="73" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="73" r="3" fill="#1a1a1a"/>
+  <!-- Glasses -->
+  <circle cx="88" cy="73" r="8" fill="none" stroke="#1a1a1a" stroke-width="2" opacity="0.5"/>
+  <circle cx="112" cy="73" r="8" fill="none" stroke="#1a1a1a" stroke-width="2" opacity="0.5"/>
+  <line x1="96" y1="73" x2="104" y2="73" stroke="#1a1a1a" stroke-width="2" opacity="0.5"/>
+  <!-- Premium suit -->
+  <rect x="55" y="110" width="90" height="90" fill="#0c0a09" rx="5"/>
+  <!-- White shirt -->
+  <rect x="72" y="115" width="56" height="85" fill="#fafafa"/>
+  <!-- Tie -->
+  <path d="M 100 115 L 97 150 L 100 180 L 103 150 Z" fill="#1e40af"/>
+  <!-- Tie pattern -->
+  <line x1="100" y1="130" x2="100" y2="170" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

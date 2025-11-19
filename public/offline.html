@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - AI Avatar Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .offline-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 32px;
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 64px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            font-size: 18px;
+            color: #94A3B8;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .retry-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            color: #FFFFFF;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .retry-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4);
+        }
+
+        .status-indicator {
+            margin-top: 32px;
+            padding: 12px 24px;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 8px;
+            font-size: 14px;
+            color: #94A3B8;
+        }
+
+        .connection-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #EF4444;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: blink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .connection-dot.online {
+            background: #10B981;
+        }
+
+        .tips {
+            margin-top: 48px;
+            text-align: left;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+
+        .tips h3 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: #8B5CF6;
+        }
+
+        .tips ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips li {
+            padding: 8px 0;
+            color: #94A3B8;
+            font-size: 14px;
+        }
+
+        .tips li::before {
+            content: "✓";
+            color: #8B5CF6;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">📡</div>
+
+        <h1>You're Offline</h1>
+
+        <p>
+            It looks like you've lost your internet connection.
+            Don't worry, you can retry once you're back online.
+        </p>
+
+        <button class="retry-button" onclick="location.reload()">
+            Retry Connection
+        </button>
+
+        <div class="status-indicator">
+            <span class="connection-dot" id="connectionDot"></span>
+            <span id="connectionStatus">Offline</span>
+        </div>
+
+        <div class="tips">
+            <h3>While You're Offline:</h3>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Make sure WiFi or mobile data is enabled</li>
+                <li>Try moving to an area with better signal</li>
+                <li>Check if other apps can connect to the internet</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Monitor online/offline status
+        function updateConnectionStatus() {
+            const dot = document.getElementById('connectionDot');
+            const status = document.getElementById('connectionStatus');
+
+            if (navigator.onLine) {
+                dot.classList.add('online');
+                status.textContent = 'Back Online!';
+                // Auto-reload after 1 second
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
+            } else {
+                dot.classList.remove('online');
+                status.textContent = 'Offline';
+            }
+        }
+
+        // Check connection status
+        updateConnectionStatus();
+
+        // Listen for online/offline events
+        window.addEventListener('online', updateConnectionStatus);
+        window.addEventListener('offline', updateConnectionStatus);
+
+        // Periodic check (every 5 seconds)
+        setInterval(updateConnectionStatus, 5000);
+    </script>
+</body>
+</html>

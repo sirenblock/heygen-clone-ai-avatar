@@ -1,0 +1,136 @@
+{
+  "avatars": [
+    {
+      "id": "professional-male",
+      "name": "David Chen",
+      "description": "Professional male avatar perfect for corporate presentations and business communications",
+      "image": "assets/avatars/professional-male.svg",
+      "use_case": "Corporate presentations, business meetings, professional training",
+      "industry": "Corporate/Business",
+      "gender": "male",
+      "style": "professional",
+      "tags": ["business", "corporate", "formal", "executive"]
+    },
+    {
+      "id": "professional-female",
+      "name": "Sarah Johnson",
+      "description": "Professional female avatar ideal for business presentations and corporate videos",
+      "image": "assets/avatars/professional-female.svg",
+      "use_case": "Executive communications, business proposals, corporate training",
+      "industry": "Corporate/Business",
+      "gender": "female",
+      "style": "professional",
+      "tags": ["business", "corporate", "formal", "leadership"]
+    },
+    {
+      "id": "casual-young-male",
+      "name": "Alex Martinez",
+      "description": "Casual young male avatar great for friendly, approachable content",
+      "image": "assets/avatars/casual-young-male.svg",
+      "use_case": "Social media content, lifestyle videos, casual presentations",
+      "industry": "Media/Entertainment",
+      "gender": "male",
+      "style": "casual",
+      "tags": ["casual", "friendly", "young", "approachable"]
+    },
+    {
+      "id": "casual-young-female",
+      "name": "Emma Wilson",
+      "description": "Casual young female avatar perfect for relatable, engaging content",
+      "image": "assets/avatars/casual-young-female.svg",
+      "use_case": "Lifestyle content, social media videos, informal presentations",
+      "industry": "Media/Entertainment",
+      "gender": "female",
+      "style": "casual",
+      "tags": ["casual", "friendly", "young", "modern"]
+    },
+    {
+      "id": "business-executive",
+      "name": "Robert Anderson",
+      "description": "Senior executive avatar for high-level business communications",
+      "image": "assets/avatars/business-executive.svg",
+      "use_case": "C-suite communications, investor relations, strategic announcements",
+      "industry": "Executive/Leadership",
+      "gender": "male",
+      "style": "executive",
+      "tags": ["executive", "senior", "leadership", "authority"]
+    },
+    {
+      "id": "tech-presenter",
+      "name": "Marcus Kim",
+      "description": "Tech-savvy presenter ideal for software demos and technical content",
+      "image": "assets/avatars/tech-presenter.svg",
+      "use_case": "Software tutorials, tech demos, product launches, webinars",
+      "industry": "Technology",
+      "gender": "male",
+      "style": "tech",
+      "tags": ["technology", "software", "modern", "innovative"]
+    },
+    {
+      "id": "creative-artist",
+      "name": "Luna Rodriguez",
+      "description": "Creative artist avatar perfect for artistic and innovative content",
+      "image": "assets/avatars/creative-artist.svg",
+      "use_case": "Design presentations, creative content, art tutorials, brand storytelling",
+      "industry": "Creative/Design",
+      "gender": "female",
+      "style": "creative",
+      "tags": ["creative", "artistic", "innovative", "design"]
+    },
+    {
+      "id": "fitness-coach",
+      "name": "Jake Thompson",
+      "description": "Athletic fitness coach avatar for health and wellness content",
+      "image": "assets/avatars/fitness-coach.svg",
+      "use_case": "Fitness tutorials, workout guides, health coaching, wellness content",
+      "industry": "Health/Fitness",
+      "gender": "male",
+      "style": "athletic",
+      "tags": ["fitness", "health", "sports", "wellness"]
+    },
+    {
+      "id": "teacher",
+      "name": "Dr. Patricia Lee",
+      "description": "Friendly teacher avatar ideal for educational and training content",
+      "image": "assets/avatars/teacher.svg",
+      "use_case": "Online courses, educational videos, training modules, tutorials",
+      "industry": "Education",
+      "gender": "female",
+      "style": "educational",
+      "tags": ["education", "teaching", "learning", "academic"]
+    },
+    {
+      "id": "doctor",
+      "name": "Dr. Michael Brown",
+      "description": "Medical professional avatar for healthcare and medical content",
+      "image": "assets/avatars/doctor.svg",
+      "use_case": "Medical information, healthcare videos, patient education, wellness tips",
+      "industry": "Healthcare",
+      "gender": "male",
+      "style": "medical",
+      "tags": ["healthcare", "medical", "professional", "clinical"]
+    },
+    {
+      "id": "sales-rep",
+      "name": "Chris Parker",
+      "description": "Friendly sales representative avatar for marketing and sales content",
+      "image": "assets/avatars/sales-rep.svg",
+      "use_case": "Product demos, sales pitches, marketing videos, customer outreach",
+      "industry": "Sales/Marketing",
+      "gender": "male",
+      "style": "sales",
+      "tags": ["sales", "marketing", "friendly", "persuasive"]
+    },
+    {
+      "id": "customer-support",
+      "name": "Jennifer Taylor",
+      "description": "Approachable customer support avatar for service and help content",
+      "image": "assets/avatars/customer-support.svg",
+      "use_case": "Customer service videos, help tutorials, FAQ videos, support content",
+      "industry": "Customer Service",
+      "gender": "female",
+      "style": "support",
+      "tags": ["support", "service", "helpful", "friendly"]
+    }
+  ]
+}

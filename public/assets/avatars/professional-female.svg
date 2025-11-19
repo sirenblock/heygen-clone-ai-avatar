@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#831843;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db2777;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg2)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#d4a574"/>
+  <!-- Hair -->
+  <path d="M 65 55 Q 65 35 100 35 Q 135 35 135 55 L 138 85 Q 138 95 130 95 Q 130 85 125 80 L 125 75 Q 120 70 115 70 L 85 70 Q 80 70 75 75 L 75 80 Q 70 85 70 95 Q 62 95 62 85 Z" fill="#3d2817"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="75" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="75" r="3" fill="#1a1a1a"/>
+  <!-- Lips -->
+  <ellipse cx="100" cy="88" rx="6" ry="3" fill="#c2185b"/>
+  <!-- Blazer -->
+  <rect x="60" y="110" width="80" height="90" fill="#1e3a8a" rx="5"/>
+  <!-- Blouse -->
+  <rect x="75" y="115" width="50" height="85" fill="#e8f4f8"/>
+  <!-- Necklace -->
+  <circle cx="100" cy="112" r="4" fill="#fbbf24" stroke="#f59e0b" stroke-width="1"/>
+</svg>

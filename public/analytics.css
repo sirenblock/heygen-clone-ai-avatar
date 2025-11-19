@@ -1,0 +1,251 @@
+/**
+ * Analytics CSS - Cookie Consent Banner Styles
+ * GDPR-Compliant Cookie Consent UI
+ */
+
+#cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 24px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    animation: slideUp 0.4s ease-out;
+    border-top: 2px solid #8B5CF6;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.consent-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.consent-text {
+    flex: 1;
+}
+
+.consent-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.consent-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.privacy-link {
+    color: #8B5CF6;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.privacy-link:hover {
+    color: #a78bfa;
+    text-decoration: underline;
+}
+
+.consent-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.consent-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.consent-accept {
+    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+    color: white;
+}
+
+.consent-accept:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.consent-reject {
+    background: transparent;
+    color: #cbd5e1;
+    border: 1px solid #475569;
+}
+
+.consent-reject:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #64748b;
+}
+
+.consent-customize {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.consent-customize:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #cookie-consent-banner {
+        padding: 20px 16px;
+    }
+
+    .consent-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .consent-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .consent-btn {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    .consent-text h3 {
+        font-size: 18px;
+    }
+
+    .consent-text p {
+        font-size: 13px;
+    }
+}
+
+/* Customize Modal (if implemented) */
+.consent-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.consent-modal-content {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.consent-modal-header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.consent-option {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consent-option-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.consent-option-info p {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.consent-toggle {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background: #475569;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.consent-toggle.active {
+    background: #8B5CF6;
+}
+
+.consent-toggle::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.consent-toggle.active::after {
+    transform: translateX(24px);
+}

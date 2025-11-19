@@ -1,0 +1,524 @@
+/* PWA & Mobile Enhancements for AI Avatar Studio */
+
+/* ===================================
+   PWA Install Banner
+   =================================== */
+
+.install-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+    color: white;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+}
+
+.install-banner.hidden {
+    transform: translateY(-100%);
+    display: none;
+}
+
+.install-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.install-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.install-text strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.install-text span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.install-button {
+    background: white;
+    color: #8B5CF6;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    white-space: nowrap;
+    min-height: 44px; /* Touch target size */
+}
+
+.install-button:hover {
+    transform: scale(1.05);
+}
+
+.install-button:active {
+    transform: scale(0.95);
+}
+
+.dismiss-install {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 8px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dismiss-install:hover {
+    opacity: 1;
+}
+
+/* ===================================
+   Mobile Menu Toggle
+   =================================== */
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ===================================
+   Mobile Action Bar
+   =================================== */
+
+.mobile-action-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark-light);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.mobile-generate-btn {
+    width: 100%;
+    background: var(--gradient);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-height: 56px; /* Larger touch target for mobile */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mobile-generate-btn:active {
+    transform: scale(0.98);
+}
+
+.mobile-generate-btn .btn-icon {
+    font-size: 24px;
+}
+
+/* ===================================
+   Enhanced Touch Targets
+   =================================== */
+
+/* Ensure all interactive elements meet 44px minimum */
+button,
+a,
+.avatar-card,
+.feature-card,
+select,
+input[type="range"],
+.nav-links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Larger touch targets for mobile buttons */
+.avatar-card {
+    min-height: 100px;
+    padding: 16px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.preview-voice-btn,
+.result-actions button {
+    min-height: 48px;
+    padding: 12px 24px;
+}
+
+/* ===================================
+   Mobile Navbar Enhancements
+   =================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* Safe area support for notched devices */
+.nav-container {
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+}
+
+/* ===================================
+   Responsive Mobile Styles
+   =================================== */
+
+@media (max-width: 768px) {
+    /* Show mobile menu toggle */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* Hide logo text on very small screens */
+    .logo-text {
+        display: inline;
+    }
+
+    /* Mobile navigation */
+    .nav-links {
+        position: fixed;
+        top: 73px;
+        left: 0;
+        right: 0;
+        background: var(--dark-light);
+        flex-direction: column;
+        padding: 16px;
+        gap: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links a {
+        padding: 16px;
+        border-radius: 8px;
+        transition: background 0.2s;
+        width: 100%;
+        text-align: left;
+        min-height: 56px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:active {
+        background: rgba(139, 92, 246, 0.1);
+    }
+
+    /* Show mobile action bar */
+    .mobile-action-bar {
+        display: flex;
+    }
+
+    /* Hide desktop generate button on mobile */
+    .generate-btn {
+        display: none;
+    }
+
+    /* Enhanced mobile spacing */
+    .hero {
+        padding: 48px 20px;
+    }
+
+    .create-section {
+        padding: 48px 16px 120px; /* Extra bottom padding for fixed action bar */
+    }
+
+    .studio-panel {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+
+    /* Larger script textarea on mobile */
+    .script-textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 16px;
+        min-height: 180px;
+    }
+
+    /* Mobile-optimized avatar grid */
+    .avatar-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Voice selector stacking */
+    .voice-selector {
+        flex-direction: column;
+    }
+
+    .voice-dropdown {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    /* Mobile option rows */
+    .option-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .option-row input[type="range"] {
+        width: 100%;
+    }
+
+    /* Install banner mobile adjustments */
+    .install-text span {
+        display: none; /* Hide subtitle on small screens */
+    }
+
+    /* Progress steps on mobile */
+    .progress-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Mobile result actions */
+    .result-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .result-actions button {
+        width: 100%;
+        min-height: 56px;
+    }
+
+    /* Hero title sizing */
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 18px 24px;
+        min-height: 56px;
+    }
+}
+
+/* ===================================
+   Extra Small Devices
+   =================================== */
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none; /* Hide text, show only icon */
+    }
+
+    .install-banner {
+        padding: 10px 12px;
+    }
+
+    .install-content {
+        gap: 8px;
+    }
+
+    .install-text strong {
+        font-size: 13px;
+    }
+
+    .install-button {
+        padding: 6px 16px;
+        font-size: 13px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .avatar-preview {
+        font-size: 36px;
+    }
+}
+
+/* ===================================
+   Landscape Mobile
+   =================================== */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .mobile-action-bar {
+        padding: 8px 16px;
+    }
+
+    .mobile-generate-btn {
+        padding: 12px;
+        min-height: 48px;
+    }
+
+    .hero {
+        padding: 32px 20px;
+    }
+}
+
+/* ===================================
+   PWA Display Mode Specific Styles
+   =================================== */
+
+@media (display-mode: standalone) {
+    /* Running as installed PWA */
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .navbar {
+        padding-top: env(safe-area-inset-top);
+    }
+
+    /* Hide install banner when running as PWA */
+    .install-banner {
+        display: none !important;
+    }
+}
+
+/* ===================================
+   Offline Indicator
+   =================================== */
+
+body.offline::before {
+    content: "⚠ Offline Mode";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #F59E0B;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 10000;
+}
+
+body.offline.pwa-installed::before {
+    top: env(safe-area-inset-top);
+}
+
+/* ===================================
+   Improved Focus States for Accessibility
+   =================================== */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* ===================================
+   Pull-to-Refresh Support
+   =================================== */
+
+body {
+    overscroll-behavior-y: contain;
+}
+
+/* ===================================
+   Smooth Scrolling
+   =================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

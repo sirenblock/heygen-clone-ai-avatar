@@ -1,0 +1,99 @@
+<!--
+  PWA HTML Snippets for AI Avatar Studio
+  Copy and paste these into your index.html at the specified locations
+-->
+
+<!-- ========================================
+     SNIPPET 1: HEAD META TAGS
+     Location: Replace existing <head> content
+     ======================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AI Avatar Studio - Create Realistic AI Videos</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="Transform text into professional videos with AI-powered avatars and voice synthesis">
+    <meta name="theme-color" content="#8B5CF6">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AI Avatar">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="analytics.css">
+    <link rel="stylesheet" href="pwa-mobile.css">
+</head>
+
+
+<!-- ========================================
+     SNIPPET 2: PWA INSTALL BANNER
+     Location: Right after <body> tag, before navigation
+     ======================================== -->
+
+<div id="installBanner" class="install-banner hidden">
+    <div class="install-content">
+        <div class="install-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L12 15M12 15L8 11M12 15L16 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 15V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="install-text">
+            <strong>Install AI Avatar Studio</strong>
+            <span>Quick access from your home screen</span>
+        </div>
+        <button id="installBtn" class="install-button">Install</button>
+        <button id="dismissInstall" class="dismiss-install">✕</button>
+    </div>
+</div>
+
+
+<!-- ========================================
+     SNIPPET 3: MOBILE MENU TOGGLE BUTTON
+     Location: Inside .logo div in navigation, add button and update nav-links
+     ======================================== -->
+
+<!-- Add this button after the logo -->
+<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- Update your nav-links div to include the id -->
+<div class="nav-links" id="navLinks">
+    <!-- Your existing nav links -->
+</div>
+
+
+<!-- ========================================
+     SNIPPET 4: MOBILE ACTION BAR
+     Location: Right after the main "Generate Button" in create section
+     ======================================== -->
+
+<div class="mobile-action-bar">
+    <button id="mobileGenerateBtn" class="mobile-generate-btn">
+        <span class="btn-icon">🎬</span>
+        <span class="btn-text">Generate Video</span>
+    </button>
+</div>
+
+
+<!-- ========================================
+     SNIPPET 5: PWA SCRIPT TAG
+     Location: Before closing </body> tag, after other scripts
+     ======================================== -->
+
+<script src="pwa.js"></script>

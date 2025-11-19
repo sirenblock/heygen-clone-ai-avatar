@@ -1,0 +1,50 @@
+{
+  "task_1": {
+    "title": "SEO Optimization & Meta Tags",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Add comprehensive SEO to the AI Avatar Platform. Update public/index.html with: complete meta tags (title, description, keywords focused on 'AI avatar', 'video generation', 'text to video'), OpenGraph tags for social sharing with image, Twitter Card markup, Schema.org structured data for SoftwareApplication. Create public/sitemap.xml with all pages and public/robots.txt. Focus on ranking for 'AI avatar creator', 'HeyGen alternative', 'AI video generator'. Make title compelling for CTR. Add canonical URLs."
+  },
+  "task_2": {
+    "title": "Stock Avatar Assets & Gallery",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Create stock avatar system. Make public/assets/avatars/ directory. Generate 12 professional avatar placeholder images using SVG or data URIs (don't download external files). Create avatars.json with metadata for each: Professional Male, Professional Female, Casual Young Male, Casual Young Female, Business Executive, Tech Presenter, Creative Artist, Fitness Coach, Teacher, Doctor, Sales Rep, Customer Support. Each with name, description, use-case, industry. Update public/index.html avatar grid to use real data. Implement lazy loading for images."
+  },
+  "task_3": {
+    "title": "Enhanced UI Components & Animations",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Enhance the UI with premium animations. Create public/animations.css with: skeleton loaders for content loading, smooth hover effects with scale/glow, scroll-triggered fade-in animations, page transition effects, loading spinners for async actions, button ripple effects, gradient animations, parallax effects for hero section. Update public/styles.css with micro-interactions. Add data-aos attributes to HTML elements for animation on scroll. Make it feel premium and polished like top SaaS products."
+  },
+  "task_4": {
+    "title": "Voice Samples & Audio Previews",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Add voice preview system. Create public/assets/voices/ with voices.json metadata for 10 voices: Rachel (Professional Female), Adam (Professional Male), Domi (Energetic Female), Josh (Warm Male), Bella (Young Female), Antoni (Narrator Male), Elli (Friendly Female), Arnold (Deep Male), Emily (British Female), Matilda (American Female). Each with characteristics (pitch, speed, accent, tone, use-case). Update public/app.js with real voice preview player using Web Audio API for waveform visualization. Add audio player UI component with play/pause, waveform display. No need for actual audio files - create simulated preview."
+  },
+  "task_5": {
+    "title": "Performance Optimization",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Optimize performance. Create public/service-worker.js for caching static assets. Add lazy loading for all images with loading='lazy' and intersection observer fallback. Implement critical CSS inline in HTML head. Add preconnect/prefetch for external resources. Create minified versions public/styles.min.css and public/app.min.js (keep originals). Add resource hints. Implement font-display: swap. Create performance.md report with lighthouse score targets. Add cache headers documentation. Optimize CSS with will-change for animations."
+  },
+  "task_6": {
+    "title": "Accessibility Enhancements",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Make the site WCAG 2.1 AA compliant. Add ARIA labels to all interactive elements, ARIA roles for regions, ARIA live regions for dynamic content. Implement keyboard navigation with visible focus indicators, skip links to main content. Add screen reader announcements for state changes. Ensure color contrast ratio 4.5:1 minimum. Add alt text to all images. Make forms accessible with proper labels. Create accessibility.md documentation. Add focus trap for modals. Implement reduced-motion media query for animations. Test with tab navigation."
+  },
+  "task_7": {
+    "title": "Analytics & Tracking",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Add analytics infrastructure. Create public/analytics.js with: Google Analytics 4 setup (use placeholder ID), custom event tracking for button clicks, video generation starts, downloads, shares, custom events for scroll depth, time on page, feature usage. Add conversion funnel tracking (view → start → complete → download). Create data layer for Google Tag Manager. Add privacy-compliant cookie consent banner. Document all tracked events in analytics.md. Implement user journey tracking. Add heatmap integration code (Hotjar placeholder). Make it GDPR compliant with opt-in."
+  },
+  "task_8": {
+    "title": "FAQ & Help Documentation",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Create comprehensive FAQ system. Add FAQ section to public/index.html with 25+ questions covering: What is AI Avatar?, How does it work?, Pricing questions, Technical requirements, Video quality, Export formats, Avatar customization, Voice cloning, API access, Supported languages, Processing time, File size limits, Commercial use, Refund policy, Data privacy, etc. Implement collapsible accordion UI with smooth animations. Add search functionality to filter FAQs. Create interactive help tooltips throughout the interface. Add 'Need help?' floating button. Style with existing design system."
+  },
+  "task_9": {
+    "title": "Pricing & Plans Section",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Design pricing section. Add to public/index.html a beautiful pricing table with 3 tiers: Free (0/month - 3 videos, 720p, watermark, 5 avatars), Pro (29/month - 50 videos, 1080p, no watermark, all avatars, voice cloning, priority processing), Enterprise (Custom - unlimited, 4K, API access, custom avatars, dedicated support, SLA). Add feature comparison matrix. Create pricing calculator for credit-based system. Add FAQ for pricing. Implement toggle for monthly/yearly (save 20%). Add 'Most Popular' badge. Style with gradient cards and hover effects. Include CTA buttons."
+  },
+  "task_10": {
+    "title": "User Testimonials & Social Proof",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Add social proof elements. Create testimonials section in public/index.html with 12 testimonials from diverse users: marketing managers, content creators, educators, sales teams, HR departments, etc. Add star ratings, user avatars (SVG), company names, use cases. Create 'Trusted by' section with 20+ company logo placeholders (Fortune 500 style). Add live statistics counter (animated count-up): 50,000+ videos created, 10,000+ happy users, 150+ countries, 99.9% uptime. Create testimonials.json for dynamic loading. Add video testimonial placeholder section. Implement carousel for testimonials."
+  },
+  "task_11": {
+    "title": "Interactive Demo & Tutorial",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Create interactive onboarding. Make public/tutorial.js with step-by-step guided tour using Shepherd.js style (implement custom). Steps: 1) Welcome, 2) Select Avatar, 3) Choose Voice, 4) Enter Script, 5) Advanced Options, 6) Generate. Add 'Try Demo' button that pre-fills form with sample script and auto-generates demo video. Create sample-scripts.json with 10 example scripts for different use cases (product demo, training video, social media, announcement, etc.). Add progress indicator. Implement skip/next/back navigation. Create tutorial.css for overlay and tooltips. Add celebration animation on completion."
+  },
+  "task_12": {
+    "title": "Mobile Optimization & PWA",
+    "prompt": "Working in /Users/lsd/msclaude/projects/heygen clone - Make it a Progressive Web App. Create public/manifest.json with app details, theme colors, icons array. Generate PWA icons: create icon-192.png and icon-512.png as SVG-based placeholders. Update public/service-worker.js for offline support with cache-first strategy for static assets, network-first for API. Add install prompt with 'Add to Home Screen' button. Refine mobile CSS: larger touch targets (44px min), improved spacing, mobile menu, sticky mobile header, bottom action bar for generate button. Add offline.html fallback page. Test on iOS Safari and Chrome Android. Add apple-touch-icon meta tags. Perfect mobile viewport."
+  }
+}

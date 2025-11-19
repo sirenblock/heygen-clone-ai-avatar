@@ -1,0 +1,153 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "role": "Marketing Manager",
+      "company": "TechFlow Inc",
+      "avatar": "SJ",
+      "rating": 5,
+      "text": "AI Avatar Studio transformed our content creation process. We're producing 10x more video content with half the budget. The quality is incredible!",
+      "useCase": "Marketing Videos"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "role": "Content Creator",
+      "company": "CreativeMinds",
+      "avatar": "MC",
+      "rating": 5,
+      "text": "As a solo content creator, this tool is a game-changer. I can now create professional videos without being on camera. My engagement has tripled!",
+      "useCase": "YouTube Content"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Emily Rodriguez",
+      "role": "University Professor",
+      "company": "Stanford University",
+      "avatar": "ER",
+      "rating": 5,
+      "text": "Perfect for creating engaging educational content. My students love the consistency and quality. It's made distance learning so much more effective.",
+      "useCase": "Online Education"
+    },
+    {
+      "id": 4,
+      "name": "James Patterson",
+      "role": "Sales Director",
+      "company": "SalesForce Pro",
+      "avatar": "JP",
+      "rating": 5,
+      "text": "Our sales team uses AI avatars for personalized outreach at scale. Response rates increased by 250%. This is the future of sales!",
+      "useCase": "Sales Outreach"
+    },
+    {
+      "id": 5,
+      "name": "Lisa Patel",
+      "role": "HR Director",
+      "company": "Global Enterprises",
+      "avatar": "LP",
+      "rating": 5,
+      "text": "We use this for employee training and onboarding across 30 countries. Consistent messaging, multiple languages, and massive time savings.",
+      "useCase": "Corporate Training"
+    },
+    {
+      "id": 6,
+      "name": "David Kim",
+      "role": "Product Manager",
+      "company": "InnovateTech",
+      "avatar": "DK",
+      "rating": 5,
+      "text": "The API integration was seamless. We automated our entire product demo creation workflow. Our conversion rates have never been better!",
+      "useCase": "Product Demos"
+    },
+    {
+      "id": 7,
+      "name": "Amanda Foster",
+      "role": "Social Media Manager",
+      "company": "BrandBoost Agency",
+      "avatar": "AF",
+      "rating": 5,
+      "text": "Creating multi-platform content is now effortless. We manage 50+ client accounts and this tool saves us 20 hours per week. Worth every penny!",
+      "useCase": "Social Media"
+    },
+    {
+      "id": 8,
+      "name": "Roberto Martinez",
+      "role": "E-Learning Developer",
+      "company": "EduTech Solutions",
+      "avatar": "RM",
+      "rating": 5,
+      "text": "The voice quality and lip-sync are phenomenal. We've created entire course libraries in weeks instead of months. Our clients are amazed!",
+      "useCase": "Course Creation"
+    },
+    {
+      "id": 9,
+      "name": "Jennifer Wu",
+      "role": "Startup Founder",
+      "company": "StartupHub",
+      "avatar": "JW",
+      "rating": 5,
+      "text": "As a bootstrapped startup, we couldn't afford video production. AI Avatar Studio gave us professional videos on a shoestring budget. Incredible!",
+      "useCase": "Startup Marketing"
+    },
+    {
+      "id": 10,
+      "name": "Thomas Anderson",
+      "role": "Communications Lead",
+      "company": "Fortune Global 500",
+      "avatar": "TA",
+      "rating": 5,
+      "text": "We use this for internal communications across our global workforce. 24-hour turnaround for executive messages. Game-changing efficiency!",
+      "useCase": "Internal Comms"
+    },
+    {
+      "id": 11,
+      "name": "Priya Sharma",
+      "role": "Digital Marketing Specialist",
+      "company": "GrowthHackers Co",
+      "avatar": "PS",
+      "rating": 5,
+      "text": "The customization options are endless. We create personalized video campaigns that convert 3x better than traditional ads. Absolutely revolutionary!",
+      "useCase": "Performance Marketing"
+    },
+    {
+      "id": 12,
+      "name": "Marcus Johnson",
+      "role": "Learning & Development Manager",
+      "company": "Corporate Solutions Inc",
+      "avatar": "MJ",
+      "rating": 5,
+      "text": "Training compliance videos used to take weeks. Now we produce them in hours with perfect consistency. ROI achieved in the first month!",
+      "useCase": "Compliance Training"
+    }
+  ],
+  "videoTestimonials": [
+    {
+      "id": 1,
+      "name": "Alexandra Davis",
+      "role": "CEO",
+      "company": "TechVentures",
+      "thumbnail": "video-thumb-1",
+      "duration": "1:23",
+      "videoUrl": "#"
+    },
+    {
+      "id": 2,
+      "name": "Ryan Thompson",
+      "role": "Marketing VP",
+      "company": "Growth Solutions",
+      "thumbnail": "video-thumb-2",
+      "duration": "2:05",
+      "videoUrl": "#"
+    },
+    {
+      "id": 3,
+      "name": "Sophia Lee",
+      "role": "Content Director",
+      "company": "MediaCorp",
+      "thumbnail": "video-thumb-3",
+      "duration": "1:45",
+      "videoUrl": "#"
+    }
+  ]
+}

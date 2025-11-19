@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg11)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#e0b090"/>
+  <!-- Hair (friendly/approachable) -->
+  <path d="M 68 60 Q 68 42 100 40 Q 132 42 132 60 L 130 72 Q 126 64 118 62 L 114 68 L 108 64 L 102 68 L 100 64 L 98 68 L 92 64 L 86 68 L 82 62 Q 74 64 70 72 Z" fill="#5a3a1a"/>
+  <!-- Eyes (friendly) -->
+  <circle cx="88" cy="75" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="75" r="3" fill="#1a1a1a"/>
+  <!-- Big smile -->
+  <path d="M 85 84 Q 100 92 115 84" stroke="#8b4513" stroke-width="2.5" fill="none"/>
+  <!-- Business casual shirt -->
+  <rect x="60" y="110" width="80" height="90" fill="#1e40af" rx="5"/>
+  <!-- Collar -->
+  <path d="M 75 110 L 82 118 L 75 125" fill="#60a5fa" stroke="#1e40af" stroke-width="1"/>
+  <path d="M 125 110 L 118 118 L 125 125" fill="#60a5fa" stroke="#1e40af" stroke-width="1"/>
+  <!-- Buttons -->
+  <circle cx="100" cy="130" r="3" fill="#dbeafe"/>
+  <circle cx="100" cy="145" r="3" fill="#dbeafe"/>
+  <circle cx="100" cy="160" r="3" fill="#dbeafe"/>
+  <!-- Pocket with pen -->
+  <rect x="72" y="125" width="18" height="20" fill="#1e3a8a" rx="1"/>
+  <rect x="78" y="120" width="2" height="12" fill="#fbbf24"/>
+  <circle cx="79" cy="119" r="2" fill="#fbbf24"/>
+</svg>

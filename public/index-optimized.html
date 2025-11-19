@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Avatar Studio - Create Realistic AI Videos</title>
+    <meta name="description" content="Transform text into professional videos with AI-powered avatars and voice synthesis">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.yourdomain.com">
+    <link rel="prefetch" href="/service-worker.js">
+
+    <!-- Critical CSS - inline for faster initial render -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}:root{--primary:#8B5CF6;--primary-dark:#7C3AED;--secondary:#EC4899;--dark:#0F172A;--dark-light:#1E293B;--gray:#64748B;--light:#F8FAFC;--white:#FFFFFF;--gradient:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%)}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;background:var(--dark);color:var(--white);line-height:1.6}.navbar{background:var(--dark-light);border-bottom:1px solid rgba(255,255,255,.1);padding:16px 0;position:sticky;top:0;z-index:1000;backdrop-filter:blur(10px);will-change:transform}.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}.logo{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:700}.hero{padding:80px 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1200px;margin:0 auto}.hero-title{font-size:56px;font-weight:800;line-height:1.1;margin-bottom:24px;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;will-change:transform}.container{max-width:1200px;margin:0 auto;padding:0 24px}.skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:white;padding:8px;z-index:100;text-decoration:none}.skip-link:focus{top:0}
+    </style>
+
+    <!-- Load full CSS asynchronously -->
+    <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+
+    <!-- Fallback to non-minified if minified not available -->
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" role="img" aria-label="AI Avatar Studio logo">
+                    <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                    <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" style="stop-color:#8B5CF6"/>
+                            <stop offset="100%" style="stop-color:#EC4899"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>AI Avatar Studio</span>
+            </div>
+            <div class="nav-links">
+                <a href="#create" aria-label="Go to create video section">Create</a>
+                <a href="#avatars" aria-label="View my avatars">My Avatars</a>
+                <a href="#voices" aria-label="Browse available voices">Voices</a>
+                <a href="#docs" target="_blank" rel="noopener noreferrer" aria-label="Open API documentation in new window">API Docs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner" aria-label="Hero section">
+        <div class="hero-content">
+            <h1 class="hero-title">Create Realistic AI Avatar Videos in Minutes</h1>
+            <p class="hero-subtitle">Transform text into professional videos with AI-powered avatars and voice synthesis</p>
+            <a href="#create" class="cta-button" aria-label="Start creating videos for free">Start Creating Free</a>
+        </div>
+        <div class="hero-video" aria-label="Demo video placeholder">
+            <div class="video-placeholder">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" role="img" aria-label="Play button icon">
+                    <circle cx="40" cy="40" r="40" fill="url(#heroGradient)" opacity="0.2"/>
+                    <path d="M30 25L55 40L30 55V25Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="heroGradient" x1="0" y1="0" x2="80" y2="80">
+                            <stop offset="0%" style="stop-color:#8B5CF6"/>
+                            <stop offset="100%" style="stop-color:#EC4899"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Section -->
+    <section id="create" class="create-section" role="main" aria-labelledby="main-content">
+        <div class="container">
+            <h2 id="main-content" class="section-title">Generate Your AI Video</h2>
+
+            <div class="creation-studio">
+                <!-- Avatar Selection -->
+                <div class="studio-panel">
+                    <h3>1. Select Avatar</h3>
+                    <div class="avatar-grid">
+                        <div class="avatar-card active" data-avatar="default">
+                            <div class="avatar-preview">👤</div>
+                            <span>Professional</span>
+                        </div>
+                        <div class="avatar-card" data-avatar="casual">
+                            <div class="avatar-preview">👨‍💼</div>
+                            <span>Casual</span>
+                        </div>
+                        <div class="avatar-card" data-avatar="friendly">
+                            <div class="avatar-preview">👩</div>
+                            <span>Friendly</span>
+                        </div>
+                        <div class="avatar-card upload-avatar">
+                            <div class="avatar-preview">➕</div>
+                            <span>Upload</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voice Selection -->
+                <div class="studio-panel">
+                    <h3>2. Choose Voice</h3>
+                    <div class="voice-selector">
+                        <select id="voiceSelect" class="voice-dropdown">
+                            <option value="rachel">Rachel - Professional Female</option>
+                            <option value="adam">Adam - Professional Male</option>
+                            <option value="domi">Domi - Energetic Female</option>
+                            <option value="josh">Josh - Warm Male</option>
+                            <option value="custom">Custom Voice (Clone)</option>
+                        </select>
+                        <button class="preview-voice-btn">▶ Preview</button>
+                    </div>
+                </div>
+
+                <!-- Script Input -->
+                <div class="studio-panel">
+                    <h3>3. Enter Your Script</h3>
+                    <textarea
+                        id="scriptInput"
+                        class="script-textarea"
+                        placeholder="Enter your script here... (e.g., 'Welcome to our product demo. Today I'll show you how our AI-powered platform can transform your business...')&#10;&#10;💡 Tips:&#10;- Keep sentences natural and conversational&#10;- Add pauses with commas and periods&#10;- Aim for 150-300 words for best results"
+                        rows="8"
+                    ></textarea>
+                    <div class="script-stats">
+                        <span id="wordCount">0 words</span>
+                        <span id="estimatedDuration">~0 seconds</span>
+                    </div>
+                </div>
+
+                <!-- Advanced Options -->
+                <div class="studio-panel collapsible">
+                    <h3 class="collapsible-header">
+                        <span>Advanced Options</span>
+                        <span class="collapse-icon">▼</span>
+                    </h3>
+                    <div class="collapsible-content">
+                        <div class="option-row">
+                            <label>Video Quality</label>
+                            <select id="qualitySelect">
+                                <option value="720p">720p (Fast)</option>
+                                <option value="1080p" selected>1080p (Recommended)</option>
+                                <option value="4k">4K (Slow)</option>
+                            </select>
+                        </div>
+                        <div class="option-row">
+                            <label>Background</label>
+                            <select id="backgroundSelect">
+                                <option value="default">Default</option>
+                                <option value="office">Professional Office</option>
+                                <option value="studio">Studio</option>
+                                <option value="custom">Custom Upload</option>
+                            </select>
+                        </div>
+                        <div class="option-row">
+                            <label>Speaking Speed</label>
+                            <input type="range" id="speedSlider" min="0.5" max="2" step="0.1" value="1">
+                            <span id="speedValue">1.0x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generate Button -->
+                <button id="generateBtn" class="generate-btn">
+                    <span class="btn-text">Generate Video</span>
+                    <span class="btn-icon">🎬</span>
+                </button>
+
+                <!-- Progress Section -->
+                <div id="progressSection" class="progress-section hidden">
+                    <div class="progress-header">
+                        <h3>Generating Your Video...</h3>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step" data-step="1">
+                            <div class="step-icon">🎤</div>
+                            <span>Synthesizing Voice</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-icon">👄</div>
+                            <span>Syncing Lips</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-icon">🎥</div>
+                            <span>Rendering Video</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <div class="step-icon">✨</div>
+                            <span>Finalizing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Section -->
+                <div id="resultSection" class="result-section hidden">
+                    <h3>Your Video is Ready! 🎉</h3>
+                    <div class="video-preview">
+                        <video id="resultVideo" controls preload="metadata" loading="lazy"></video>
+                    </div>
+                    <div class="result-actions">
+                        <button class="download-btn">Download MP4</button>
+                        <button class="share-btn">Share Link</button>
+                        <button class="new-video-btn">Create Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Realistic Avatars</h3>
+                    <p>Create custom avatars with advanced facial animation and lip-sync technology</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Natural Voice Synthesis</h3>
+                    <p>ElevenLabs-powered voices with emotion and natural speech patterns</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Generation</h3>
+                    <p>GPU-accelerated processing for quick video generation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Custom Backgrounds</h3>
+                    <p>Professional backgrounds or upload your own</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Batch Processing</h3>
+                    <p>Generate multiple videos simultaneously</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>API Access</h3>
+                    <p>Integrate with your applications via REST API</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Videos Generated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Avatar Options</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Voice Models</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Avatar Studio</h4>
+                    <p>Create professional AI avatar videos with ease</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#docs">API Documentation</a>
+                    <a href="#examples">Examples</a>
+                    <a href="#tutorials">Tutorials</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#help">Help Center</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#status">System Status</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Avatar Studio. Powered by Wav2Lip & ElevenLabs.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load JavaScript with defer for better performance -->
+    <script src="app.min.js" defer></script>
+    <script>
+        // Fallback to non-minified version
+        window.addEventListener('error', function(e) {
+            if (e.target.src && e.target.src.includes('app.min.js')) {
+                var script = document.createElement('script');
+                script.src = 'app.js';
+                script.defer = true;
+                document.body.appendChild(script);
+            }
+        }, true);
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registered:', registration.scope);
+                    })
+                    .catch(function(error) {
+                        console.log('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Intersection Observer for lazy loading fallback -->
+    <script>
+        // Fallback for browsers that don't support loading="lazy"
+        if ('loading' in HTMLImageElement.prototype === false) {
+            var lazyImages = document.querySelectorAll('img[loading="lazy"], video[loading="lazy"]');
+            if ('IntersectionObserver' in window) {
+                var lazyObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            var lazyElement = entry.target;
+                            if (lazyElement.dataset.src) {
+                                lazyElement.src = lazyElement.dataset.src;
+                            }
+                            lazyElement.removeAttribute('loading');
+                            lazyObserver.unobserve(lazyElement);
+                        }
+                    });
+                });
+                lazyImages.forEach(function(img) { lazyObserver.observe(img); });
+            }
+        }
+    </script>
+</body>
+</html>

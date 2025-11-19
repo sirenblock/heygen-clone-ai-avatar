@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Avatar Studio - Create Realistic AI Videos</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="accessibility.css">
     <link rel="stylesheet" href="analytics.css">
     <link rel="stylesheet" href="tutorial.css">
     <link rel="stylesheet" href="animations.css">
@@ -797,7 +796,6 @@
 
     <!-- Analytics Infrastructure -->
     <script src="analytics.js"></script>
-    <script src="accessibility.js"></script>
     <script src="social-proof.js"></script>
     <script src="app.js"></script>
     <script src="tutorial.js"></script>

@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg1)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#d4a574"/>
+  <!-- Hair -->
+  <path d="M 65 60 Q 65 40 100 40 Q 135 40 135 60 L 135 75 Q 135 55 100 55 Q 65 55 65 75 Z" fill="#2c1810"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="75" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="75" r="3" fill="#1a1a1a"/>
+  <!-- Suit -->
+  <rect x="60" y="110" width="80" height="90" fill="#1e293b" rx="5"/>
+  <!-- Shirt -->
+  <rect x="75" y="115" width="50" height="85" fill="#ffffff"/>
+  <!-- Tie -->
+  <path d="M 100 115 L 95 145 L 100 175 L 105 145 Z" fill="#dc2626"/>
+  <!-- Collar -->
+  <path d="M 75 115 L 85 125 L 75 135" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <path d="M 125 115 L 115 125 L 125 135" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+</svg>

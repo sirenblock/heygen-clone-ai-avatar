@@ -1,0 +1,200 @@
+{
+  "voices": [
+    {
+      "id": "rachel",
+      "name": "Rachel",
+      "gender": "female",
+      "description": "Professional Female",
+      "characteristics": {
+        "pitch": "medium-high",
+        "speed": "moderate",
+        "accent": "American",
+        "tone": "professional",
+        "age": "adult"
+      },
+      "useCase": "Corporate presentations, tutorials, professional videos",
+      "preview_text": "Hello! I'm Rachel. I bring a professional and clear tone to your corporate presentations and educational content.",
+      "tags": ["professional", "clear", "corporate", "educational"],
+      "rating": 4.8,
+      "popular": true,
+      "waveform_seed": 42
+    },
+    {
+      "id": "adam",
+      "name": "Adam",
+      "gender": "male",
+      "description": "Professional Male",
+      "characteristics": {
+        "pitch": "medium",
+        "speed": "moderate",
+        "accent": "American",
+        "tone": "confident",
+        "age": "adult"
+      },
+      "useCase": "Business presentations, narrations, explainer videos",
+      "preview_text": "Hi, I'm Adam. My confident and authoritative voice is perfect for business presentations and professional narrations.",
+      "tags": ["professional", "confident", "business", "narration"],
+      "rating": 4.9,
+      "popular": true,
+      "waveform_seed": 17
+    },
+    {
+      "id": "domi",
+      "name": "Domi",
+      "gender": "female",
+      "description": "Energetic Female",
+      "characteristics": {
+        "pitch": "high",
+        "speed": "fast",
+        "accent": "American",
+        "tone": "enthusiastic",
+        "age": "young-adult"
+      },
+      "useCase": "Marketing videos, social media content, promotional material",
+      "preview_text": "Hey there! I'm Domi, and I'm super excited to help you create engaging content that really connects with your audience!",
+      "tags": ["energetic", "enthusiastic", "marketing", "social-media"],
+      "rating": 4.7,
+      "popular": true,
+      "waveform_seed": 88
+    },
+    {
+      "id": "josh",
+      "name": "Josh",
+      "gender": "male",
+      "description": "Warm Male",
+      "characteristics": {
+        "pitch": "medium-low",
+        "speed": "moderate",
+        "accent": "American",
+        "tone": "warm",
+        "age": "adult"
+      },
+      "useCase": "Storytelling, audiobooks, guided meditations, wellness content",
+      "preview_text": "Hello, I'm Josh. My warm and friendly voice creates a comfortable atmosphere for storytelling and personal connection.",
+      "tags": ["warm", "friendly", "storytelling", "wellness"],
+      "rating": 4.9,
+      "popular": true,
+      "waveform_seed": 55
+    },
+    {
+      "id": "bella",
+      "name": "Bella",
+      "gender": "female",
+      "description": "Young Female",
+      "characteristics": {
+        "pitch": "high",
+        "speed": "moderate-fast",
+        "accent": "American",
+        "tone": "youthful",
+        "age": "young"
+      },
+      "useCase": "Gaming content, casual videos, youth-oriented content",
+      "preview_text": "Hi! I'm Bella! I love bringing energy and fun to gaming videos and casual content that connects with younger audiences!",
+      "tags": ["youthful", "casual", "gaming", "fun"],
+      "rating": 4.6,
+      "popular": false,
+      "waveform_seed": 123
+    },
+    {
+      "id": "antoni",
+      "name": "Antoni",
+      "gender": "male",
+      "description": "Narrator Male",
+      "characteristics": {
+        "pitch": "low",
+        "speed": "slow-moderate",
+        "accent": "British",
+        "tone": "authoritative",
+        "age": "mature"
+      },
+      "useCase": "Documentaries, audiobooks, serious narrations, educational content",
+      "preview_text": "Good day. I am Antoni. My deep, authoritative voice is ideal for documentaries and compelling narrative storytelling.",
+      "tags": ["narrator", "documentary", "authoritative", "deep"],
+      "rating": 4.8,
+      "popular": false,
+      "waveform_seed": 99
+    },
+    {
+      "id": "elli",
+      "name": "Elli",
+      "gender": "female",
+      "description": "Friendly Female",
+      "characteristics": {
+        "pitch": "medium",
+        "speed": "moderate",
+        "accent": "American",
+        "tone": "friendly",
+        "age": "adult"
+      },
+      "useCase": "Customer service, tutorials, explanatory videos, vlogs",
+      "preview_text": "Hi there! I'm Elli. I'm here to help make your tutorials and customer-facing content feel warm and approachable.",
+      "tags": ["friendly", "helpful", "approachable", "tutorials"],
+      "rating": 4.7,
+      "popular": false,
+      "waveform_seed": 66
+    },
+    {
+      "id": "arnold",
+      "name": "Arnold",
+      "gender": "male",
+      "description": "Deep Male",
+      "characteristics": {
+        "pitch": "very-low",
+        "speed": "slow",
+        "accent": "American",
+        "tone": "powerful",
+        "age": "mature"
+      },
+      "useCase": "Movie trailers, dramatic content, powerful announcements",
+      "preview_text": "I am Arnold. With a commanding presence and deep resonance, I bring gravitas to your most important announcements.",
+      "tags": ["deep", "powerful", "dramatic", "trailer"],
+      "rating": 4.8,
+      "popular": false,
+      "waveform_seed": 33
+    },
+    {
+      "id": "emily",
+      "name": "Emily",
+      "gender": "female",
+      "description": "British Female",
+      "characteristics": {
+        "pitch": "medium",
+        "speed": "moderate",
+        "accent": "British",
+        "tone": "sophisticated",
+        "age": "adult"
+      },
+      "useCase": "Luxury brands, educational content, sophisticated presentations",
+      "preview_text": "Hello, I'm Emily. My refined British accent adds elegance and sophistication to your premium content.",
+      "tags": ["british", "sophisticated", "elegant", "luxury"],
+      "rating": 4.9,
+      "popular": true,
+      "waveform_seed": 77
+    },
+    {
+      "id": "matilda",
+      "name": "Matilda",
+      "gender": "female",
+      "description": "American Female",
+      "characteristics": {
+        "pitch": "medium",
+        "speed": "moderate",
+        "accent": "American",
+        "tone": "neutral",
+        "age": "adult"
+      },
+      "useCase": "General purpose, news, information delivery, versatile content",
+      "preview_text": "Hello, I'm Matilda. My versatile and neutral American accent works well for a wide range of professional applications.",
+      "tags": ["versatile", "neutral", "general-purpose", "news"],
+      "rating": 4.7,
+      "popular": false,
+      "waveform_seed": 111
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-01-19",
+    "total_voices": 10,
+    "default_voice": "rachel"
+  }
+}

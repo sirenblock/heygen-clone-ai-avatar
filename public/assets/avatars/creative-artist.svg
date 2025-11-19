@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c026d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e879f9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg7)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#d4a574"/>
+  <!-- Artistic hair (colorful) -->
+  <path d="M 65 55 Q 65 35 100 32 Q 135 35 135 55 L 138 88 Q 136 98 130 102 L 125 92 L 120 100 L 115 90 L 110 98 L 105 88 L 100 96 L 95 88 L 90 98 L 85 90 L 80 100 L 75 92 L 70 102 Q 64 98 62 88 Z" fill="#7c3aed"/>
+  <!-- Hair highlights (rainbow) -->
+  <path d="M 75 50 Q 80 45 85 50" stroke="#ec4899" stroke-width="3" fill="none"/>
+  <path d="M 90 48 Q 95 43 100 48" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <path d="M 105 48 Q 110 43 115 48" stroke="#10b981" stroke-width="3" fill="none"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="75" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="75" r="3" fill="#1a1a1a"/>
+  <!-- Artistic scarf -->
+  <rect x="60" y="110" width="80" height="90" fill="#1a1a1a" rx="5"/>
+  <!-- Paint palette on shirt -->
+  <circle cx="85" cy="145" r="8" fill="#ef4444" opacity="0.7"/>
+  <circle cx="100" cy="145" r="8" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="115" cy="145" r="8" fill="#facc15" opacity="0.7"/>
+  <circle cx="92" cy="158" r="8" fill="#22c55e" opacity="0.7"/>
+  <circle cx="108" cy="158" r="8" fill="#a855f7" opacity="0.7"/>
+</svg>

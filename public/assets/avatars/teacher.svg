@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0369a1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bg9)"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#d4a574"/>
+  <!-- Hair (neat/professional) -->
+  <path d="M 68 60 Q 68 40 100 38 Q 132 40 132 60 L 132 75 Q 130 62 122 60 L 118 68 L 112 62 L 106 68 L 100 62 L 94 68 L 88 62 L 82 68 L 78 60 Q 70 62 68 75 Z" fill="#6b4423"/>
+  <!-- Eyes with glasses -->
+  <circle cx="88" cy="74" r="3" fill="#1a1a1a"/>
+  <circle cx="112" cy="74" r="3" fill="#1a1a1a"/>
+  <!-- Reading glasses -->
+  <circle cx="88" cy="74" r="9" fill="none" stroke="#b91c1c" stroke-width="2"/>
+  <circle cx="112" cy="74" r="9" fill="none" stroke="#b91c1c" stroke-width="2"/>
+  <line x1="97" y1="74" x2="103" y2="74" stroke="#b91c1c" stroke-width="2"/>
+  <!-- Friendly smile -->
+  <path d="M 88 86 Q 100 91 112 86" stroke="#8b4513" stroke-width="2" fill="none"/>
+  <!-- Cardigan/Professional attire -->
+  <rect x="60" y="110" width="80" height="90" fill="#92400e" rx="5"/>
+  <!-- Shirt underneath -->
+  <rect x="75" y="115" width="50" height="85" fill="#fef3c7"/>
+  <!-- Book icon -->
+  <rect x="88" y="148" width="24" height="30" fill="#7c2d12" stroke="#451a03" stroke-width="1"/>
+  <line x1="100" y1="148" x2="100" y2="178" stroke="#451a03" stroke-width="1"/>
+</svg>

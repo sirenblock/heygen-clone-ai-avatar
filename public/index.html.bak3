@@ -797,7 +797,6 @@
 
     <!-- Analytics Infrastructure -->
     <script src="analytics.js"></script>
-    <script src="accessibility.js"></script>
     <script src="social-proof.js"></script>
     <script src="app.js"></script>
     <script src="tutorial.js"></script>
