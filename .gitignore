@@ -1,47 +1,156 @@
+# AI Avatar Platform - Git Ignore
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
-*.egg-info/
-dist/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Data directories
+data/models/*.pth
+data/models/*.pt
+data/models/*.ckpt
+data/avatars/*/
+data/temp/*
+data/output/*
+!data/temp/.gitkeep
+!data/output/.gitkeep
 
 # Logs
 logs/
 *.log
-pids/
-
-# Environment
-.env
-.env.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+*~
 
-# Temporary
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# PyType
+.pytype/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~.nib
 temp/
 tmp/
-*.tmp
 
-# Data
-data/
+# Large files
 *.mp4
+*.avi
+*.mov
 *.wav
 *.mp3
+*.m4a
+*.flac
+!example_*.mp4  # Keep example files if any
 
-# Models
+# API keys and secrets
+secrets/
+*.pem
+*.key
+*.cert
+
+# Model checkpoints (can be large)
+checkpoints/
 *.pth
 *.pt
-*.onnx
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# IDE
+*.sublime-project
+*.sublime-workspace
+
+# Documentation build
+docs/_build/
+site/
+
+# Backup files
+*.backup
+*.old
+
+# Cache
+.cache/
+*.cache
+
+# FFmpeg temp
+ffmpeg2pass-*.log
